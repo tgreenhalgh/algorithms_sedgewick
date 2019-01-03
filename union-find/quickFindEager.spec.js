@@ -16,9 +16,10 @@ describe('quick find', () => {
       expect(UF.QuickFindUF().length).toBe(5);
     });
 
-    it('should check if two objects are connected', () => {
+    it('should check if two objects are not connected', () => {
       const UF = new helpers.QuickFindUF(5);
-      expect(UF.connected(2, 3)).toBe(true);
+      UF.QuickFindUF();
+      expect(UF.connected(2, 3)).toBe(false);
     });
   });
 });

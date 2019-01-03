@@ -29,11 +29,11 @@ class QuickFindUF {
   }
 }
 
-let UF = new QuickFindUF(5);
-console.log('id[]', UF.QuickFindUF());
-console.log(UF.connected(2, 3));
-console.log(UF.union(2, 3));
-console.log(UF.connected(2, 3));
+// let UF = new QuickFindUF(5);
+// console.log('id[]', UF.QuickFindUF());
+// console.log(UF.connected(2, 3));
+// console.log(UF.union(2, 3));
+// console.log(UF.connected(2, 3));
 
 module.exports = {
   QuickFindUF,

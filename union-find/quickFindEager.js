@@ -34,3 +34,7 @@ console.log('id[]', UF.QuickFindUF());
 console.log(UF.connected(2, 3));
 console.log(UF.union(2, 3));
 console.log(UF.connected(2, 3));
+
+module.exports = {
+  QuickFindUF,
+};

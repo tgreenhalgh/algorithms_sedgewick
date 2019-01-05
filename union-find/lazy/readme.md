@@ -32,4 +32,4 @@ Data structure:
 | ------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- |
 | `id[]` | 0   | 1   | 9   | 4   | 9   | 6   | 6   | 7   | 8   | <font color="red">6 |
 
-after union of 3 and 5 because `root of 3 is 9` and `root of 5 is 6` so set the `id` of `p`'s root, 9, to the `id` of `q`'s root, 6
+union(3, 5) because `root of 3 is 9` and `root of 5 is 6` so set the `id` of `p`'s root, to the `id` of `q`'s root, 6

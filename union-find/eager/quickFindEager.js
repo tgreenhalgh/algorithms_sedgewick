@@ -4,6 +4,7 @@ class QuickFindUF {
     this.id = [];
   }
 
+  // inits the data structure
   QuickFindUF() {
     for (let i = 0; i < this.N; i++) {
       this.id[i] = i;
@@ -12,10 +13,12 @@ class QuickFindUF {
     return this.id;
   }
 
+  // are connected if p & q have the same id
   connected(p, q) {
     return this.id[p] == this.id[q];
   }
 
+  // union: change all entries whose id equals id[p] to id[q]
   union(p, q) {
     if (this.id[p] == this.id[q]) return;
     const oldValue = this.id[p];
@@ -28,12 +31,6 @@ class QuickFindUF {
     return this.id;
   }
 }
-
-// let UF = new QuickFindUF(5);
-// console.log('id[]', UF.QuickFindUF());
-// console.log(UF.connected(2, 3));
-// console.log(UF.union(2, 3));
-// console.log(UF.connected(2, 3));
 
 module.exports = {
   QuickFindUF,

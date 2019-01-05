@@ -1,4 +1,4 @@
-class QuickFindUF {
+class QuickFindUFEager {
   constructor(N) {
     this.N = N;
     this.id = [];
@@ -33,5 +33,5 @@ class QuickFindUF {
 }
 
 module.exports = {
-  QuickFindUF,
+  QuickFindUFEager,
 };

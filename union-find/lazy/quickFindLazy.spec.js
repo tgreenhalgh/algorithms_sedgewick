@@ -19,14 +19,14 @@ describe('quick find- LAZY', () => {
     it('should find the correct root', () => {
       const UF = new helpers.QuickFindUFLazy(5);
       UF.QuickFindUF();
-      expect(UF.root(3)).toBe(2);
+      expect(UF.root(3)).toBe(3);
     });
 
-    // it('should check if two objects are not connected', () => {
-    //   const UF = new helpers.QuickFindUFLazy(5);
-    //   UF.QuickFindUF();
-    //   expect(UF.connected(2, 3)).toBe(false);
-    // });
+    it('should check if two objects are not connected', () => {
+      const UF = new helpers.QuickFindUFLazy(5);
+      UF.QuickFindUF();
+      expect(UF.connected(2, 3)).toBe(false);
+    });
 
     // it('should connect two objects', () => {
     //   const UF = new helpers.QuickFindUFLazy(5);

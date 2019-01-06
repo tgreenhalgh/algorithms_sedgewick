@@ -21,7 +21,7 @@ class QuickFindUFLazy {
 
   // connected if p & q have same root
   connected(p, q) {
-    return this.root[p] == this.root[q];
+    return this.root(p) == this.root(q);
   }
 }
 

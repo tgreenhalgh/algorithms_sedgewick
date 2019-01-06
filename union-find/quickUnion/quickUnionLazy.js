@@ -1,11 +1,11 @@
-class QuickFindUFLazy {
+class QuickUnionUFLazy {
   constructor(N) {
     this.N = N;
     this.id = [];
   }
 
   // inits the data structure
-  QuickFindUF() {
+  QuickUnionUF() {
     for (let i = 0; i < this.N; i++) {
       this.id[i] = i;
     }
@@ -34,5 +34,5 @@ class QuickFindUFLazy {
 }
 
 module.exports = {
-  QuickFindUFLazy,
+  QuickUnionUFLazy,
 };

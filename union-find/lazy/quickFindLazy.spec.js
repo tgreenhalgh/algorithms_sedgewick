@@ -1,11 +1,11 @@
 const helpers = require('./quickFindLazy');
 
-describe('quick find- EAGER', () => {
+describe('quick find- LAZY', () => {
   it('runs the tests', () => {
     expect(true).toBe(true);
   });
 
-  describe('create a new quickfind', () => {
+  describe('quickfind lazy', () => {
     it('should create a new QuickFindUF', () => {
       const UF = new helpers.QuickFindUFLazy(5);
       expect(typeof UF).toBe('object');
@@ -19,7 +19,7 @@ describe('quick find- EAGER', () => {
     it('should find the correct root', () => {
       const UF = new helpers.QuickFindUFLazy(5);
       UF.QuickFindUF();
-      expect(UF.root(3)).toBe(3);
+      expect(UF.root(3)).toBe(2);
     });
 
     // it('should check if two objects are not connected', () => {

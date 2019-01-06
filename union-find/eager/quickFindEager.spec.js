@@ -5,7 +5,7 @@ describe('quick find- EAGER', () => {
     expect(true).toBe(true);
   });
 
-  describe('create a new quickfind', () => {
+  describe('quickfind eager', () => {
     it('should create a new QuickFindUF', () => {
       const UF = new helpers.QuickFindUFEager(5);
       expect(typeof UF).toBe('object');

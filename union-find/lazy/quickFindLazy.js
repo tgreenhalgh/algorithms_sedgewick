@@ -23,6 +23,9 @@ class QuickFindUFLazy {
   connected(p, q) {
     return this.root(p) == this.root(q);
   }
+
+  // union: set the id of p's root to the id of q's root
+  union(p, q) {}
 }
 
 module.exports = {

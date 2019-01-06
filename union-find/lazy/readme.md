@@ -24,7 +24,7 @@ Data structure:
 
 <br>
 
-- **union: to merge components containing p and q, set the `id` of `p`'s root to the id of `q`'s root**
+- **union: to merge components containing p and q, set the `id[]` of `p`'s root to the `id` of `q`'s root**
   
 ![graph](./lazyunion2.png)
 
@@ -32,4 +32,4 @@ Data structure:
 | :-----: | --- | --- | --- | --- | --- | --- | --- | --- | --- | ------------------- |
 | `id[i]` | 0   | 1   | 9   | 4   | 9   | 6   | 6   | 7   | 8   | <font color="red">6 |
 
-union(3, 5) because the root of 3 is 9 and the root of 5 is 6, so set the `id` of `p`'s root, to the `id` of `q`'s root, 6
+union(3, 5): the root of 3 is 9 and the root of 5 is 6, so set the `id` of `p`'s root to the `id` of `q`'s root, 6

@@ -28,11 +28,11 @@ describe('quick find- LAZY', () => {
       expect(UF.connected(2, 3)).toBe(false);
     });
 
-    // it('should connect two objects', () => {
-    //   const UF = new helpers.QuickFindUFLazy(5);
-    //   UF.QuickFindUF();
-    //   UF.union(2, 3);
-    //   expect(UF.connected(2, 3)).toBe(true);
-    // });
+    it('should connect two objects', () => {
+      const UF = new helpers.QuickFindUFLazy(5);
+      UF.QuickFindUF();
+      UF.union(2, 3);
+      expect(UF.connected(2, 3)).toBe(true);
+    });
   });
 });

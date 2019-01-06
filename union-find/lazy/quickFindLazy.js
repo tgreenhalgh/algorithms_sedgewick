@@ -24,8 +24,13 @@ class QuickFindUFLazy {
     return this.root(p) == this.root(q);
   }
 
-  // union: set the id of p's root to the id of q's root
-  union(p, q) {}
+  // union: set the id[] of p's root to the id of q's root
+  union(p, q) {
+    const pRoot = this.root(p);
+    const qRoot = this.root(q);
+
+    this.id[pRoot] = qRoot;
+  }
 }
 
 module.exports = {
